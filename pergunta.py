@@ -1,10 +1,9 @@
 import pygame
 import random
-from Organizapais import formatar_bandeiras
 from constantes import *
 
 class Pergunta:
-    '''Seleciona o país da rodada, embaralha e monta as 4 alternativas'''
+    
     def __init__(self, paises, bandeiras):
         self.bandeiras = bandeiras
         self.todos_paises = paises

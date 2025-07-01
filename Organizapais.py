@@ -1,5 +1,4 @@
 import os
-
 nomes_certos = {
     'estados_unidos': 'Estados Unidos',
     'alemanha': 'Alemanha',
@@ -208,6 +207,6 @@ def formatar_bandeiras(pasta):
                 caminho = os.path.join(pasta, arquivo)
                 bandeiras_formatadas[nome_legivel] = caminho
             else:
-                print(f"[!] Aviso: nome '{nome_base}' não está no dicionário 'nomes_legiveis'.")
+                print(f"[!] Aviso: nome '{nome_base}' não está no dicionário 'nomes_certos'.")
 
     return bandeiras_formatadas

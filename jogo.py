@@ -29,7 +29,7 @@ class Jogo:
         espacoX = XOPCAO[1] - (LARGURAOPCAO + XOPCAO[0])
         espacoY = YOPCAO[1] - (ALTURAOPCAO + YOPCAO[0])
 
-        for i, opcao in enumerate(self.opcoes_atuais):
+        for i, opcao in enumerate(self.opcoes_atuais): 
             linha = i // 2
             coluna = i % 2
             x = XOPCAO[0] + coluna * (LARGURAOPCAO + espacoX)

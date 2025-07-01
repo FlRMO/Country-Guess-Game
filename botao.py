@@ -1,5 +1,5 @@
 import pygame
-from Organizapais import formatar_bandeiras
+
 from constantes import *
 
 class Botao:
