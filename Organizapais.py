@@ -197,11 +197,20 @@ nomes_certos = {
 }
 
 def formatar_bandeiras(pasta):
+    '''Lê os arquivos da pasta e cria um dicionário com os nomes legíveis e caminhos das imagens de bandeiras.
+    Usa um mapeamento pré-definido para traduzir nomes de arquivos em nomes reais dos países.
+
+    Args:
+        pasta (str): nome da pasta onde estão as imagens de bandeiras.
+
+    Returns:
+        dict: mapeia nomes legíveis (ex: 'Brasil') para caminhos de imagens.'''
+    
     bandeiras_formatadas = {}
 
     for arquivo in os.listdir(pasta):
         if arquivo.lower().endswith((".png", ".jpg", ".jpeg")):
-            nome_base = os.path.splitext(arquivo)[0].lower()  # Ex: "estados_unidos"
+            nome_base = os.path.splitext(arquivo)[0].lower()  # Ex: "paises_baixos"
             if nome_base in nomes_certos:
                 nome_legivel = nomes_certos[nome_base]
                 caminho = os.path.join(pasta, arquivo)
